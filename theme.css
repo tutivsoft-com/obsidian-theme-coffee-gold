@@ -1,0 +1,94 @@
+/* Coffee Gold 1.0.0. MIT. */
+
+body.theme-light {
+  --background-primary: #faf0df;
+  --background-primary-alt: #faf0df;
+  --background-secondary: #efe0c8;
+  --background-secondary-alt: #efe0c8;
+  --background-modifier-form-field: #faf0df;
+  --background-modifier-border: #9a775f;
+  --background-modifier-border-hover: #9a775f;
+  --background-modifier-border-focus: #51458a;
+  --background-modifier-hover: color-mix(in srgb, #51458a 12%, #efe0c8);
+  --background-modifier-active-hover: color-mix(in srgb, #51458a 18%, #efe0c8);
+  --text-normal: #322117;
+  --text-muted: #624637;
+  --text-faint: #624637;
+  --text-accent: #51458a;
+  --text-accent-hover: #79496c;
+  --text-on-accent: #faf0df;
+  --interactive-accent: #51458a;
+  --interactive-accent-hover: #79496c;
+  --text-selection: color-mix(in srgb, #51458a 25%, #faf0df);
+  --text-highlight-bg: color-mix(in srgb, #86430f 23%, #faf0df);
+  --color-blue: #51458a;
+  --color-orange: #86430f;
+  --color-green: #42633a;
+  --color-purple: #79496c;
+  --code-background: #efe0c8;
+  --code-normal: #322117;
+  --code-comment: #624637;
+  --code-function: #51458a;
+  --code-keyword: #79496c;
+  --code-string: #42633a;
+  --link-color: #51458a;
+  --link-external-color: #42633a;
+  --icon-color: #624637;
+  --nav-item-color: #624637;
+  --nav-item-color-active: #322117;
+  --tab-text-color: #624637;
+}
+body.theme-dark {
+  --background-primary: #261812;
+  --background-primary-alt: #261812;
+  --background-secondary: #352419;
+  --background-secondary-alt: #352419;
+  --background-modifier-form-field: #261812;
+  --background-modifier-border: #916e51;
+  --background-modifier-border-hover: #916e51;
+  --background-modifier-border-focus: #eaca89;
+  --background-modifier-hover: color-mix(in srgb, #eaca89 12%, #352419);
+  --background-modifier-active-hover: color-mix(in srgb, #eaca89 18%, #352419);
+  --text-normal: #f8e8cf;
+  --text-muted: #ddc3aa;
+  --text-faint: #ddc3aa;
+  --text-accent: #eaca89;
+  --text-accent-hover: #e8adc0;
+  --text-on-accent: #261812;
+  --interactive-accent: #eaca89;
+  --interactive-accent-hover: #e8adc0;
+  --text-selection: color-mix(in srgb, #eaca89 25%, #261812);
+  --text-highlight-bg: color-mix(in srgb, #ffaf77 23%, #261812);
+  --color-blue: #eaca89;
+  --color-orange: #ffaf77;
+  --color-green: #bfd695;
+  --color-purple: #e8adc0;
+  --code-background: #352419;
+  --code-normal: #f8e8cf;
+  --code-comment: #ddc3aa;
+  --code-function: #eaca89;
+  --code-keyword: #e8adc0;
+  --code-string: #bfd695;
+  --link-color: #eaca89;
+  --link-external-color: #bfd695;
+  --icon-color: #ddc3aa;
+  --nav-item-color: #ddc3aa;
+  --nav-item-color-active: #f8e8cf;
+  --tab-text-color: #ddc3aa;
+}
+
+body { --h1-color: var(--text-accent); --h2-color: var(--text-normal); }
+.workspace-split.mod-left-split { border-inline-end: 1px solid var(--background-modifier-border); }
+.menu, .modal { border: 1px solid var(--background-modifier-border); }
+
+.workspace-leaf-content :focus-visible,
+.modal :focus-visible,
+.menu :focus-visible {
+  outline: 2px solid var(--text-accent);
+  outline-offset: -2px;
+}
+
+.markdown-rendered .list-bullet::after,
+.markdown-source-view .list-bullet::after {
+  background-color: var(--text-muted);
+}
