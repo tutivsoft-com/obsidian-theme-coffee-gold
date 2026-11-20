@@ -1,4 +1,4 @@
-/* Coffee Gold 1.0.0. MIT. */
+/* Coffee Gold 1.0.1. MIT. */
 
 body.theme-light {
   --background-primary: #faf0df;
@@ -80,6 +80,10 @@ body.theme-dark {
 body { --h1-color: var(--text-accent); --h2-color: var(--text-normal); }
 .workspace-split.mod-left-split { border-inline-end: 1px solid var(--background-modifier-border); }
 .menu, .modal { border: 1px solid var(--background-modifier-border); }
+
+.is-mobile .markdown-source-view.mod-cm6 .cm-contentContainer > .cm-content {
+  padding-inline: 8px;
+}
 
 .workspace-leaf-content :focus-visible,
 .modal :focus-visible,

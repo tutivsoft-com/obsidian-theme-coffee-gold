@@ -2,7 +2,7 @@
 
 A warm brown Obsidian theme with cream text and muted gold accents.
 
-Version 1.0.0. Modes supported: Dark and light. Tested in Obsidian 1.15.1 on Windows.
+Source version 1.0.1. Modes supported: Dark and light. Tested in Obsidian 1.15.1 on Windows.
 
 ## Preview
 
