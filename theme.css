@@ -1,4 +1,4 @@
-/* Coffee Gold 3.7.0. MIT. */
+/* Coffee Gold 3.7.1. MIT. */
 
 body.theme-light {
   --background-primary: #faf0df;
@@ -32,7 +32,9 @@ body.theme-light {
   --code-keyword: #79496c;
   --code-string: #42633a;
   --link-color: #51458a;
+  --link-color-hover: var(--text-accent-hover);
   --link-external-color: #42633a;
+  --link-external-color-hover: #304c2a;
   --icon-color: #624637;
   --nav-item-color: #624637;
   --nav-item-color-active: #322117;
@@ -70,7 +72,9 @@ body.theme-dark {
   --code-keyword: #e8adc0;
   --code-string: #bfd695;
   --link-color: #eaca89;
+  --link-color-hover: var(--text-accent-hover);
   --link-external-color: #bfd695;
+  --link-external-color-hover: #dce9b5;
   --icon-color: #ddc3aa;
   --nav-item-color: #ddc3aa;
   --nav-item-color-active: #f8e8cf;
@@ -90,6 +94,12 @@ body { --h1-color: var(--text-accent); --h2-color: var(--text-normal); }
 .menu :focus-visible {
   outline: 2px solid var(--text-accent);
   outline-offset: -2px;
+}
+
+.workspace-leaf-content button.mod-cta:focus-visible,
+.modal button.mod-cta:focus-visible,
+.menu button.mod-cta:focus-visible {
+  outline-color: var(--text-on-accent);
 }
 
 .markdown-rendered .list-bullet::after,

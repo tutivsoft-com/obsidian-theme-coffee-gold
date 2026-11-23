@@ -1,10 +1,6 @@
-# Coffee Gold
+# Coffee Gold original design plan
 
-A warm brown Obsidian theme with cream text and muted gold accents.
-
-**Status: planning only. No theme code has been written.**
-
-Plan date: 13 November 2026. This repository currently contains this planning README only. The name is a descriptive working name; Community name availability must be checked before any future submission.
+This plan records the design proposed on 13 November 2026, before implementation and release. See the [README](README.md) for current modes, requirements and installation.
 
 Search keywords: Obsidian theme, coffee, brown, gold accents, cream text, warm dark mode.
 
@@ -18,7 +14,7 @@ A user explicitly requested a coffee/brown theme with gold accents. This is a na
 
 - [Direct coffee and gold palette request](https://www.reddit.com/r/ObsidianMD/comments/1us4sr1/theme_wants/)
 
-The Reddit links come from the preceding idea research and represent qualitative demand, not a market-size estimate or proof that existing themes do not solve the problem. For Pure OLED Rainbow, the additional requirement comes directly from the owner. Other themes and snippets may already address parts of these needs.
+The Reddit post was a qualitative signal from the original idea research.
 
 ## Planned appearance and features
 
@@ -49,8 +45,6 @@ Official references for later implementation:
 - [Submit a theme](https://docs.obsidian.md/Themes/App%20themes/Submit%20your%20theme)
 - [Developer policies](https://docs.obsidian.md/community-directory/developer-policies)
 
-These are future work items. No release, installation instructions, compatibility certification or Community listing is being claimed by this planning repository.
-
 ## Acceptance checklist for later implementation
 
 - [ ] Check contrast on brown surfaces, including gold links and small labels.
@@ -60,6 +54,6 @@ These are future work items. No release, installation instructions, compatibilit
 - [ ] Review screenshots for private information and verify all published documentation and asset paths.
 - [ ] Verify the default branch, release revision and uploaded assets before calling any future release complete.
 
-## Current boundary
+## Original planning scope
 
-Only repository creation and this Markdown plan are authorised in this task. Do not add theme CSS, manifests, screenshots, release tags or submissions as part of this planning work. Future work stays on this repository's verified primary branch.
+The initial task covered repository creation and this plan. Implementation and submission were deferred.
