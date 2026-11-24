@@ -1,4 +1,4 @@
-/* Coffee Gold 3.7.1. MIT. */
+/* Coffee Gold 3.7.2. MIT. */
 
 body.theme-light {
   --background-primary: #faf0df;
@@ -33,6 +33,8 @@ body.theme-light {
   --code-string: #42633a;
   --link-color: #51458a;
   --link-color-hover: var(--text-accent-hover);
+  --link-unresolved-color: var(--text-muted);
+  --link-unresolved-opacity: 1;
   --link-external-color: #42633a;
   --link-external-color-hover: #304c2a;
   --icon-color: #624637;

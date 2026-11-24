@@ -87,6 +87,15 @@ class ThemeTests(unittest.TestCase):
                     self.assert_contrast(ring, palette["--interactive-accent"], 3)
                     self.assert_contrast(ring, palette["--interactive-accent-hover"], 3)
 
+    def test_light_unresolved_links_are_readable_and_distinct(self):
+        palette = self.rules["body.theme-light"]
+        unresolved = resolve_color(palette["--link-unresolved-color"], palette)
+        self.assertEqual(float(palette["--link-unresolved-opacity"]), 1)
+        self.assertNotEqual(unresolved, resolve_color(palette["--link-color"], palette))
+        for surface in ("--background-primary", "--background-secondary"):
+            with self.subTest(surface=surface):
+                self.assert_contrast(unresolved, palette[surface], 4.5)
+
     def test_mobile_editor_retains_padding_inside_the_focus_outline(self):
         selector = ".is-mobile .markdown-source-view.mod-cm6 .cm-contentContainer > .cm-content"
         self.assertEqual(self.rules[selector]["padding-inline"], "8px")
